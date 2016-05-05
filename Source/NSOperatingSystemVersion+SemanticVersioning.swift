@@ -9,8 +9,7 @@
 import Foundation
 
 
-extension NSOperatingSystemVersion: SemanticVersion
-{
+extension NSOperatingSystemVersion: SemanticVersion {
     public var major: Int { return self.majorVersion }
     public var minor: Int { return self.minorVersion }
     public var patch: Int { return self.patchVersion }
@@ -19,4 +18,3 @@ extension NSOperatingSystemVersion: SemanticVersion
     public var isPrerelease: Bool { return false }
 
 }
-
