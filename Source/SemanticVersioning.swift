@@ -66,7 +66,11 @@ public struct Version: SemanticVersion, CustomStringConvertible {
         return versionString
     }
 
-    public init(major: Int, minor: Int = 0, patch: Int = 0, preReleaseIdentifier: [String] = [], buildMetadataIdentifier: [String] = []) {
+    public init(major: Int,
+                minor: Int = 0,
+                patch: Int = 0,
+                preReleaseIdentifier: [String] = [],
+                buildMetadataIdentifier: [String] = []) {
         self.major = major
         self.minor = minor
         self.patch = patch
